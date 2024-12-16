@@ -1,10 +1,10 @@
-// @ts-self-types="./types.d.ts"
-
 /**
  * @module
  *
  * This module provides a default exported function to convert an SVG file to a PNG file.
  */
+
+// @ts-self-types="./types.d.ts"
 
 import { toFileUrl } from "@std/path";
 
