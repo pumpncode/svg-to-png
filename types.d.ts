@@ -1,27 +1,50 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable import-x/unambiguous */
+
 /**
  * The options object for the `svgToPng` function.
- *
- * @property {number} [resizeWidth] - The width to resize the SVG to.
- * @property {number} [resizeHeight] - The height to resize the SVG to.
- * @property {boolean} [compress] - Whether to compress the PNG file.
  */
 declare type SvgToPngOptions = {
+
+	/**
+	 * Whether to compress the PNG file.
+	 */
 	compress?: boolean,
+
+	/**
+	 * The height to resize the SVG to.
+	 */
 	resizeHeight?: number,
+
+	/**
+	 * The width to resize the SVG to.
+	 */
 	resizeWidth?: number
 };
 
 /**
  * Converts an SVG file to a PNG file.
  *
- * @param {string} svgPath - The path to the SVG file.
- * @param {string} pngPath - The path to the PNG file.
- * @param {SvgToPngOptions} [options] - The options object.
- * @returns {Promise<void>} - A promise that resolves when the PNG file has been created.
+ * @param svgPath
+ * @param pngPath
+ * @param options
+ * @returns A promise that resolves when the PNG file has been created.
  * @example
  */
 declare function svgToPng(
+
+	/**
+	 * The path to the SVG file.
+	 */
 	svgPath: string,
+
+	/**
+	 * The path to the PNG file.
+	 */
 	pngPath: string,
+
+	/**
+	 * The options object.
+	 */
 	options?: SvgToPngOptions
 ): Promise<void>;
