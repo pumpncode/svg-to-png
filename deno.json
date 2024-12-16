@@ -1,0 +1,52 @@
+{
+	"name": "@pumpn/svg-to-png",
+	"version": "0.1.0",
+	"exports": "./svg-to-png.js",
+	"tasks": {
+		"svg-to-png": "deno run -A ./scripts/svg-to-png.js",
+		"lint": "npx eslint@9.14.0"
+	},
+	"imports": {
+		"@astral/astral": "jsr:@astral/astral@^0.4.9",
+		"@cliffy/command": "jsr:@cliffy/command@^1.0.0-rc.7",
+		"@radashi-org/radashi": "jsr:@radashi-org/radashi@^12.3.0",
+		"@std/path": "jsr:@std/path@^1.0.8"
+	},
+	"fmt": {
+		"options": {
+			"useTabs": true,
+			"indentWidth": 1,
+			"singleQuote": false,
+			"lineWidth": 80,
+			"proseWrap": "never",
+			"semiColons": true
+		}
+	},
+	"nodeModulesDir": "none",
+	"compilerOptions": {
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"checkJs": true,
+		"exactOptionalPropertyTypes": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "preact",
+		"noErrorTruncation": true,
+		"noFallthroughCasesInSwitch": false,
+		"noImplicitAny": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noPropertyAccessFromIndexSignature": false,
+		"noUncheckedIndexedAccess": false,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"strict": true,
+		"lib": [
+			"dom",
+			"dom.iterable",
+			"dom.asynciterable",
+			"deno.ns",
+			"deno.unstable"
+		]
+	}
+}
