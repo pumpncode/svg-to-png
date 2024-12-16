@@ -1,3 +1,9 @@
+/**
+ * @module
+ *
+ * This module provides a default exported function to convert an SVG file to a PNG file.
+ */
+
 import { toFileUrl } from "@std/path";
 
 import { launch } from "@astral/astral";
