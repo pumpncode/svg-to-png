@@ -14,15 +14,19 @@ const {
 // export each frame to png, compare each png to correct png and take average as score
 
 /**
+ * @typedef {object} SvgToPngOptions
+ * @property {number} [resizeWidth] - The width to resize the SVG to.
+ * @property {number} [resizeHeight] - The height to resize the SVG to.
+ * @property {boolean} [compress] - Whether to compress the PNG file.
+ */
+
+/**
  * Converts an SVG file to a PNG file.
  *
  * @param {string} svgPath - The path to the SVG file.
  * @param {string} pngPath - The path to the PNG file.
- * @param {object} [options] - The options object.
- * @param {number} [options.resizeWidth] - The width to resize the SVG to.
- * @param {number} [options.resizeHeight] - The height to resize the SVG to.
- * @param {boolean} [options.compress] - Whether to compress the PNG file.
- * @returns {Promise<void>}
+ * @param {SvgToPngOptions} [options] - The options object.
+ * @returns {Promise<void>} - A promise that resolves when the PNG file has been created.
  * @example
  */
 const svgToPng = async (
