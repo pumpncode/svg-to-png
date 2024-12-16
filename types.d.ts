@@ -25,26 +25,14 @@ declare type SvgToPngOptions = {
 /**
  * Converts an SVG file to a PNG file.
  *
- * @param svgPath
- * @param pngPath
- * @param options
+ * @param svgPath - The path to the SVG file.
+ * @param pngPath - The path to the PNG file.
+ * @param options - The options object.
  * @returns A promise that resolves when the PNG file has been created.
  * @example
  */
 declare function svgToPng(
-
-	/**
-	 * The path to the SVG file.
-	 */
 	svgPath: string,
-
-	/**
-	 * The path to the PNG file.
-	 */
 	pngPath: string,
-
-	/**
-	 * The options object.
-	 */
 	options?: SvgToPngOptions
 ): Promise<void>;
