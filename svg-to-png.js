@@ -22,6 +22,8 @@ const {
 // export each frame to png, compare each png to correct png and take average as score
 
 /**
+ * The options object for the `svgToPng` function.
+ *
  * @typedef {object} SvgToPngOptions
  * @property {number} [resizeWidth] - The width to resize the SVG to.
  * @property {number} [resizeHeight] - The height to resize the SVG to.
