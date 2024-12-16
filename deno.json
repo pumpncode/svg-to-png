@@ -1,6 +1,6 @@
 {
 	"name": "@pumpn/svg-to-png",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"exports": "./svg-to-png.js",
 	"tasks": {
 		"svg-to-png": "deno run -A ./scripts/svg-to-png.js",
