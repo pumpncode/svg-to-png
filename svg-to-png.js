@@ -1,3 +1,6 @@
+/* eslint-disable max-statements */
+/* eslint-disable max-lines-per-function */
+
 /**
  * @module
  *
@@ -120,6 +123,17 @@ const svgToPng = async (
 				width
 			});
 		}
+
+		const celestial = page.unsafelyGetCelestialBindings();
+
+		await celestial.Emulation.setDefaultBackgroundColorOverride({
+			color: {
+				r: 0,
+				a: 0,
+				g: 0,
+				b: 0
+			}
+		});
 
 		const imageContent = await page.screenshot({
 			captureBeyondViewport: false,
