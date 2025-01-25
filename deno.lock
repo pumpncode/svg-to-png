@@ -1,17 +1,17 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@astral/astral@0.5": "0.5.0",
+    "jsr:@astral/astral@~0.5.2": "0.5.2",
     "jsr:@cliffy/command@^1.0.0-rc.7": "1.0.0-rc.7",
     "jsr:@cliffy/flags@1.0.0-rc.7": "1.0.0-rc.7",
     "jsr:@cliffy/internal@1.0.0-rc.7": "1.0.0-rc.7",
     "jsr:@cliffy/table@1.0.0-rc.7": "1.0.0-rc.7",
     "jsr:@deno-library/progress@^1.5.1": "1.5.1",
-    "jsr:@radashi-org/radashi@^12.3.0": "12.3.0",
-    "jsr:@std/async@1": "1.0.9",
+    "jsr:@radashi-org/radashi@^12.3.3": "12.3.3",
+    "jsr:@std/async@1": "1.0.10",
     "jsr:@std/fmt@1.0.3": "1.0.3",
     "jsr:@std/fmt@~1.0.2": "1.0.3",
-    "jsr:@std/fs@1": "1.0.6",
+    "jsr:@std/fs@1": "1.0.10",
     "jsr:@std/io@0.225.0": "0.225.0",
     "jsr:@std/path@1": "1.0.8",
     "jsr:@std/path@^1.0.8": "1.0.8",
@@ -19,8 +19,8 @@
     "jsr:@zip-js/zip-js@^2.7.52": "2.7.54"
   },
   "jsr": {
-    "@astral/astral@0.5.0": {
-      "integrity": "e5d8d665b1817c84f912af36bccba12c5953d3b369901c276d799c3b7d03e08f",
+    "@astral/astral@0.5.2": {
+      "integrity": "dc4b7e0ea5d8186fcd9e33e2c54e62913d7eb99d5a2d4f987b1c5399d8e295de",
       "dependencies": [
         "jsr:@deno-library/progress",
         "jsr:@std/async",
@@ -61,17 +61,17 @@
         "jsr:@std/io"
       ]
     },
-    "@radashi-org/radashi@12.3.0": {
-      "integrity": "2743e147dcc121a33890ec1e72dd3e2e678d2b74642626096cee4f7436f241f1"
+    "@radashi-org/radashi@12.3.3": {
+      "integrity": "e8bbb96494c67cbaa0036aafd7e4add59787305ca9afa39a1a18706a5baf662b"
     },
-    "@std/async@1.0.9": {
-      "integrity": "c6472fd0623b3f3daae023cdf7ca5535e1b721dfbf376562c0c12b3fb4867f91"
+    "@std/async@1.0.10": {
+      "integrity": "2ff1b1c7d33d1416159989b0f69e59ec7ee8cb58510df01e454def2108b3dbec"
     },
     "@std/fmt@1.0.3": {
       "integrity": "97765c16aa32245ff4e2204ecf7d8562496a3cb8592340a80e7e554e0bb9149f"
     },
-    "@std/fs@1.0.6": {
-      "integrity": "42b56e1e41b75583a21d5a37f6a6a27de9f510bcd36c0c85791d685ca0b85fa2"
+    "@std/fs@1.0.10": {
+      "integrity": "bf041f9d7a0a460817f0421be8946d0e06011b3433e6c83a215628de5e3c7c2c"
     },
     "@std/io@0.225.0": {
       "integrity": "c1db7c5e5a231629b32d64b9a53139445b2ca640d828c26bf23e1c55f8c079b3"
@@ -88,9 +88,9 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@astral/astral@0.5",
+      "jsr:@astral/astral@~0.5.2",
       "jsr:@cliffy/command@^1.0.0-rc.7",
-      "jsr:@radashi-org/radashi@^12.3.0",
+      "jsr:@radashi-org/radashi@^12.3.3",
       "jsr:@std/path@^1.0.8"
     ]
   }
