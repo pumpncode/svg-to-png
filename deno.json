@@ -1,6 +1,6 @@
 {
 	"name": "@pumpn/svg-to-png",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"exports": {
 		".": "./svg-to-png.js",
 		"./cli": "./scripts/svg-to-png.js"
