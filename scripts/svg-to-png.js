@@ -5,8 +5,30 @@ import { Command } from "@cliffy/command";
 import svgToPng from "../svg-to-png.js";
 
 const {
-	args
+	args,
+	readTextFile
 } = Deno;
+
+let version = "unknown";
+
+try {
+	const moduleFilePath = import.meta.filename;
+
+	if (moduleFilePath === undefined) {
+		throw new Error("Module file path is undefined.");
+	}
+
+	const rootFolderPath = resolve(moduleFilePath, "..");
+
+	const configFilePath = resolve(rootFolderPath, "deno.json");
+
+	const configContent = await readTextFile(configFilePath);
+
+	({ version } = JSON.parse(configContent));
+}
+catch {
+	// do nothing
+}
 
 const {
 	options: {
@@ -14,7 +36,7 @@ const {
 	}
 } = await new Command()
 	.name("svg-to-png")
-	.version("0.1.0")
+	.version(version)
 	.description("Convert an SVG to a PNG")
 	.option(
 		"-i, --input <input:string>",
